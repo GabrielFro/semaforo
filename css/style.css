@@ -1,0 +1,177 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body
+{
+    background-color: black;
+    padding: 5%;  
+}
+
+#semaforo
+{
+    background-color: black;
+    padding: 2%;
+    border: 1px black solid;
+    box-shadow: 0px 1px 20px 0px white;
+
+    animation-name: shadow;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+
+}
+
+h1
+{
+    font-size: 50px;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+img
+{
+    margin: 1%;
+    max-height: 360px;
+}
+
+button
+{
+    cursor: pointer;
+    font-size: 20px;
+    width: 15%;
+    margin-top: 45px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+}   
+
+#red{
+    padding: 16px 80px;
+    margin: 10px;
+    border-radius: 8px; 
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white; 
+    background: black;
+    cursor: pointer;
+    animation-name: verm;
+    animation-duration: 2s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes verm {
+    50%{
+        background: red;  
+        box-shadow: 0px 10px 30px 0px  red ;
+        color: black;
+    }
+}
+
+#yellow{
+padding: 16px 80px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px; 
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white; 
+    background: black;
+    cursor: pointer;
+    animation-name: amar;
+    animation-duration: 2s ;
+    animation-iteration-count:  infinite;
+}
+
+@keyframes amar {
+    50%{
+        background: yellow;  
+        box-shadow: 0px 10px 30px 0px  yellow ;
+        color: black;
+    }
+}
+
+#green{
+padding: 16px 80px;
+margin: 10px;
+border: none;
+border-radius: 8px; 
+outline: none;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 3px;
+color: white; 
+background: black;
+cursor: pointer;
+animation-name: verde;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes verde {
+    50%{
+        background: green;
+        box-shadow: 0px 10px 30px 0px  green ;
+        color: black;
+    }
+}
+
+#automatic{
+padding: 16px 80px;
+margin: 10px;
+border: none;
+border-radius: 8px; 
+outline: none;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 3px;
+background: red;
+cursor: pointer;
+animation-name: button ;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+}
+
+@keyframes button {
+
+    50%{
+        background: yellow;
+        box-shadow: 0px 10px 30px 0px  yellow  ;
+        color: black;
+    }
+    100%{
+        background: green;
+        box-shadow: 0px 10px 30px 0px  green ;
+        color: black;
+    }
+}
+
+
+@keyframes shadow {
+
+    0%{
+        box-shadow: 0px 10px 30px 0px  red ;
+        color: black;
+    }
+
+    50%{
+
+        box-shadow: 0px 10px 30px 0px  yellow  ;
+        color: black;
+    }
+    100%{
+
+        box-shadow: 0px 10px 30px 0px  green ;
+        color: black;
+    }
+}
